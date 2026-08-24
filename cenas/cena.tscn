@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://4tn0j4f32ql1" path="res://sprites/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="3_ruynp"]
 [ext_resource type="Texture2D" uid="uid://dcgibs8rlipd8" path="res://sprites/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png" id="4_ncfgq"]
 [ext_resource type="Texture2D" uid="uid://b3ftbw35b5sc8" path="res://sprites/Seasonal Tilesets/5 - Misc. universal tiles/House (112 x 96).png" id="4_p2bxm"]
+[ext_resource type="Texture2D" uid="uid://caxratypniqu1" path="res://sprites/Seasonal Tilesets/3 - Tropics/Tropics_entities (16 x 16).png" id="5_bqnvw"]
 [ext_resource type="Texture2D" uid="uid://deie1knbrg8aq" path="res://sprites/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png" id="5_opqdo"]
 [ext_resource type="Texture2D" uid="uid://b874dcvscaqaf" path="res://sprites/Seasonal Tilesets/1 - Grassland/Background parts/3 - Cloud_cover_1.png" id="6_p2bxm"]
 [ext_resource type="Texture2D" uid="uid://xijhfvwrh8mq" path="res://sprites/Seasonal Tilesets/1 - Grassland/Background parts/2 - Hills.png" id="7_bqnvw"]
@@ -162,9 +163,42 @@ texture = ExtResource("4_p2bxm")
 8:0/0 = 0
 8:0/0/texture_origin = Vector2i(0, 8)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0c4g0"]
+texture = ExtResource("5_bqnvw")
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+9:3/0 = 0
+11:3/0 = 0
+13:3/0 = 0
+15:3/0 = 0
+8:3/0 = 0
+8:2/0 = 0
+12:5/size_in_atlas = Vector2i(1, 2)
+12:5/animation_separation = Vector2i(1, 0)
+12:5/animation_mode = 1
+12:5/animation_frame_0/duration = 1.0
+12:5/animation_frame_1/duration = 1.0
+12:5/0 = 0
+12:5/0/z_index = -1
+
 [sub_resource type="TileSet" id="TileSet_5c4ww"]
 sources/0 = SubResource("TileSetAtlasSource_ncfgq")
 sources/1 = SubResource("TileSetAtlasSource_bqnvw")
+sources/2 = SubResource("TileSetAtlasSource_0c4g0")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ju35k"]
 size = Vector2(20, 207)
@@ -179,7 +213,7 @@ tile_set = SubResource("TileSet_ju35k")
 position = Vector2(10, 181)
 
 [node name="fundo" type="TileMapLayer" parent="." unique_id=1280523269]
-tile_map_data = PackedByteArray("AABGAAMAAQAAAAAAAABBAAQAAAABAAEAAAA/AAQAAAAJAAEAAABAAAQAAAAJAAEAAAAzAAkAAAAJAAEAAAAoAAkAAAAJAAEAAAAfAAcAAAAJAAEAAAAbAAkAAAABAAEAAAAUAAgAAAABAAEAAAAPAAcAAAABAAEAAAAIAAcAAAABAAEAAAAGAAgAAAAFAAUAAAAHAAgAAAAGAAUAAAAIAAgAAAAHAAUAAAAOAAgAAAAFAAUAAAAPAAgAAAAGAAUAAAAQAAgAAAAHAAUAAAAVAAkAAAABAAUAAAANAAgAAAABAAUAAAAaAAoAAAABAAUAAAAZAAoAAAADAAUAAAAeAAkAAAABAAUAAAAgAAgAAAABAAUAAAAsAAQAAAABAAUAAAAwAAQAAAADAAUAAAA0AAQAAAABAAUAAABCAAUAAAABAAUAAAA+AAUAAAABAAUAAAA9AAkAAAAHAAUAAAA8AAkAAAAHAAUAAAA7AAkAAAAHAAUAAAA6AAkAAAAHAAUAAAA5AAkAAAAHAAUAAAA4AAkAAAAJAAUAAAA8AAgAAAAFAAEAAAA5AAgAAAAFAAEAAAA4AAYAAAABAAUAAAA7AAYAAAABAAUAAAA6AAUAAAAJAAEAAAA=")
+tile_map_data = PackedByteArray("AABGAAMAAQAAAAAAAABBAAQAAAABAAEAAAA/AAQAAAAJAAEAAABAAAQAAAAJAAEAAAAzAAkAAAAJAAEAAAAoAAkAAAAJAAEAAAAfAAcAAAAJAAEAAAAbAAkAAAABAAEAAAAUAAgAAAABAAEAAAAPAAcAAAABAAEAAAAIAAcAAAABAAEAAAAGAAgAAAAFAAUAAAAHAAgAAAAGAAUAAAAIAAgAAAAHAAUAAAAOAAgAAAAFAAUAAAAPAAgAAAAGAAUAAAAQAAgAAAAHAAUAAAAVAAkAAAABAAUAAAANAAgAAAABAAUAAAAaAAoAAAABAAUAAAAZAAoAAAADAAUAAAAeAAkAAAABAAUAAAAgAAgAAAABAAUAAAAsAAQAAAABAAUAAAAwAAQAAAADAAUAAAA0AAQAAAABAAUAAABCAAUAAAABAAUAAAA+AAUAAAABAAUAAAA9AAkAAAAHAAUAAAA8AAkAAAAHAAUAAAA7AAkAAAAHAAUAAAA6AAkAAAAHAAUAAAA5AAkAAAAHAAUAAAA4AAkAAAAJAAUAAAA8AAgAAAAFAAEAAAA5AAgAAAAFAAEAAAA4AAYAAAABAAUAAAA7AAYAAAABAAUAAAA6AAUAAAAJAAEAAAARAAwAAgAMAAUAAAASAAwAAgAMAAUAAAATAAwAAgAMAAUAAAAKAAwAAgAMAAUAAAALAAwAAgAMAAUAAAAXAAwAAgAMAAUAAAAYAAwAAgAMAAUAAAAcAAwAAgAMAAUAAAAJAAwAAgAMAAUAAAAMAAwAAgAMAAUAAAAQAAwAAgAMAAUAAAAUAAwAAgAMAAUAAAAWAAwAAgAMAAUAAAAZAAwAAgAMAAUAAAAbAAwAAgAMAAUAAAAdAAwAAgAMAAUAAAA=")
 tile_set = SubResource("TileSet_5c4ww")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=679729922]
